@@ -64,7 +64,7 @@ integration:
 deploy:
   steps:
     - internal/docker-push:
-        repository: rafalpienkowski/wercker-demo
+        repository: mikol4j/wercker
         tag: latest, 1.0
         username: $USERNAME
         password: $PASSWORD
