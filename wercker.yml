@@ -64,7 +64,7 @@ integration:
 deploy:
   steps:
     - internal/docker-push:
-        repository: rafalpienkowski/wercker-demo
+        repository: mikol4j/wercker
         tag: latest, 1.0
         username: $USERNAME
         password: $PASSWORD
@@ -72,3 +72,7 @@ deploy:
         entrypoint: "/pipeline/source/app/docker_entrypoint.sh"
         ports: "80"
         env: "ASPNETCORE_URLS=http://+:80"
+        
+
+
+
